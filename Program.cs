@@ -1,9 +1,8 @@
 ﻿using System;
 /*
  * 
- * Watch the video posted in CANVAS on: Arrays
+s
 
-Review the source codes on the GitHub link. Then write the following program:
 
 PROGRAM #1: Create a C# console application that demonstrates an Array with the following instructions:
 
@@ -19,19 +18,24 @@ PROGRAM #1: Create a C# console application that demonstrates an Array with the 
 // Author: Ettienne Voges
 // Program Week 3 Array program
 //
+// Demonstrates an Array
 //
 namespace Deliverable3Arrays
 {
     class Program
     {
+        // Set 25 as the number of elements.
         public const int ELEMENTS_COUNT = 25;
         static void Main(string[] args)
         {
+            // Declare the array
             int [] numbers = new int[ELEMENTS_COUNT];
             for (int i = 0; i < ELEMENTS_COUNT; i++)
             {
+                // For each iteration initialize that element (Starting at 0) with a number (Starting from 1) 
                 numbers[i] = 1 + i;
 
+                // Each iteration will provide a chance to write that element's value that have been initialize with an earlier statement. 
                 Console.Write("Element value = ");
                 Console.WriteLine(numbers[i]);
             }
